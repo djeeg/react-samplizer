@@ -13,23 +13,46 @@ npm start
 open http://localhost:3000
 ```
 
-## Test Table
-
-Library | Syntax | Mechanism | Override mechanism | Compile-time step | Media Queries | Pseudo styles | CSS Syntax | Animations | ES6 Classes | Vendor Prefixes | Dynamic styles | Universal/Isomorphic (runs on server)
--------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | --------
-[Radium](https://github.com/FormidableLabs/radium) | Plain objects, `{ ':hover': {...}` + `style` attribute + HOC | [Pure inline styles](https://github.com/FormidableLabs/radium#how-does-radium-work) | Object.assign | No | [Yes](https://github.com/FormidableLabs/radium/tree/master/docs/guides#media-queries) | Yes - :hover, :active, :focus | [Yes](https://github.com/FormidableLabs/radium/tree/master/docs/faq#can-i-use-my-favourite-csslesssass-syntax) | [Yes](https://github.com/FormidableLabs/radium/tree/master/docs/api#keyframes) | [Yes](https://github.com/FormidableLabs/radium/tree/master/docs/guides#how-do-i-do-it-then) | Yes | Yes - anything can be done at runtime | Yes, including keyframes and media queries
-
-
 ## Samplized
 
-Function | Current Version | Discarded
+Module | Current Version | Discarded
 -------- | -------- | --------
-view engine                           | React 0.14                |
-client routing + lazy loading         | React-Router xxx          |
-server render + isomorphic/universal  | React-Router xxx          |
-client bundling                       | Webpack 2.0.7             |
+server host                           | express 4.13.4                |
+view engine                           | react 0.14.7                |
+client routing + lazy loading         | react-router 2.0.0        |
+server render + isomorphic/universal  | react-router 2.0.0        |
+client bundling                       | webpack 2.0.7-beta             |
+server code                       | ES6 + Typescript             |
+client code                       | ES6 + Typescript             |
 client code splitting                 | Webpack 2.0.7             |
-client transpiling                    | Babel + Typescript        |
-state                                 | Redux                     |
-server bundling                       | ts-loader                 |
-theme                                 | material-ui               |
+client transpiling                    | babel 6.4.5 + typescript 1.8.0               |
+state                                 | redux 3.3.1                     |
+view connection to state                                 | react-redux 4.3.0                     |
+route connection to state                                 | react-router-redux 4.0.0                     |
+server nodejs transpiling                       | ts-node 0.5.5 + typescript 1.8.0                 |
+theme                                 | material-ui 0.14.4               |
+immutable                                 | immutable 3.7.6           |
+fetch                                 | isomorphic-fetch 2.2.1               | whatwg-fetch 0.11.0, node-fetch1.3.3, axios 0.9.1
+promise                                 | es6-promise 3.0.2               |
+async                                 | redux-async-connect 1.0.0-rc2 + redux-thunk 1.0.3               |
+
+Data | Current Version | Discarded
+-------- | -------- | --------
+csv parse                                 | csv     0.4.6           |
+
+Component | Current Version | Discarded
+-------- | -------- | --------
+sticky header                         | react-headroom 1.7.3               |
+universal device scroll                         | react-iscroll 1.0.0 + iscroll 5.1.3               |
+responsive stream of items                         | react-masonry-component 4.0.0              |
+scroll parallax                         | react-parallax 0.3.2              |
+efficent lists                         | react-virtualized 5.5.0              |
+
+Dev | Current Version | Discarded
+-------- | -------- | --------
+lint                                 | tslint     3.3.0           |
+types                                 | typings     0.7.9           | tsd
+test runner                                 | mocha     2.4.4           |
+asserts                                 | chai     3.5.0           |
+state tracking                                 | redux-devtools     3.1.0           |
+hot reloading                                 | webpack-hot-middleware     2.6.0           | babel-preset-react-hmre 1.0.1, react-transform-hmr 1.0.1
