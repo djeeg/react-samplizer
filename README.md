@@ -22,14 +22,14 @@ Library | Syntax | Mechanism | Override mechanism | Compile-time step | Media Qu
 
 ## Samplized
 
-| Function                              | Current Version           | Discarded  |
-| -------------                         |:-------            ------:| -----:|
-| view engine                           | React 0.14                |  |
-| client routing + lazy loading         | React-Router xxx          |  |
-| server render + isomorphic/universal  | React-Router xxx          |  |
-| client bundling                       | Webpack 2.0.7             |  |
-| client code splitting                 | Webpack 2.0.7             |  |
-| client transpiling                    | Babel + Typescript        |  |
-| state                                 | Redux                     |  |
-| server bundling                       | ts-loader                 |  |
-| theme                                 | material-ui               |  |
+Function | Current Version | Discarded
+-------- | -------- | --------
+view engine                           | React 0.14                |
+client routing + lazy loading         | React-Router xxx          |
+server render + isomorphic/universal  | React-Router xxx          |
+client bundling                       | Webpack 2.0.7             |
+client code splitting                 | Webpack 2.0.7             |
+client transpiling                    | Babel + Typescript        |
+state                                 | Redux                     |
+server bundling                       | ts-loader                 |
+theme                                 | material-ui               |
