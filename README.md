@@ -13,6 +13,13 @@ npm start
 open http://localhost:3000
 ```
 
+## Test Table
+
+Library | Syntax | Mechanism | Override mechanism | Compile-time step | Media Queries | Pseudo styles | CSS Syntax | Animations | ES6 Classes | Vendor Prefixes | Dynamic styles | Universal/Isomorphic (runs on server)
+-------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | --------
+[Radium](https://github.com/FormidableLabs/radium) | Plain objects, `{ ':hover': {...}` + `style` attribute + HOC | [Pure inline styles](https://github.com/FormidableLabs/radium#how-does-radium-work) | Object.assign | No | [Yes](https://github.com/FormidableLabs/radium/tree/master/docs/guides#media-queries) | Yes - :hover, :active, :focus | [Yes](https://github.com/FormidableLabs/radium/tree/master/docs/faq#can-i-use-my-favourite-csslesssass-syntax) | [Yes](https://github.com/FormidableLabs/radium/tree/master/docs/api#keyframes) | [Yes](https://github.com/FormidableLabs/radium/tree/master/docs/guides#how-do-i-do-it-then) | Yes | Yes - anything can be done at runtime | Yes, including keyframes and media queries
+
+
 ## Samplized
 
 | Function                              | Current Version           | Discarded  |
