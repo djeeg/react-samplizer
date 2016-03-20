@@ -17,11 +17,11 @@ open http://localhost:3000
 
 Feature | Mode | Why
 -------- | -------- | --------
-server code                           | ES6 + Typescript + NodeJS                           |
-client code                           | ES6 + Typescript + Browser                          |
-rendering                             | Isomorphic + Universal                              |
-routing                               | Lazy Loading + Code Splitting                       |
-bundling                              | Tree Shaking + Chunking                             |
+server code                           | ES6 + Typescript + NodeJS                           | language features, compile time checking, refactoring
+client code                           | ES6 + Typescript + Browser                          | language features, compile time checking, refactoring
+rendering                             | Isomorphic + Universal                              | pages are refreshable, seo, faster time-to-first-interaction
+routing                               | Lazy Loading + Code Splitting                       | smaller initial downloads, faster time-to-first-interaction
+bundling                              | Tree Shaking + Chunking                             | smaller downloads, faster time-to-first-interaction
 
 Module | Current Version | Discarded
 -------- | -------- | --------
